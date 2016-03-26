@@ -1,3 +1,9 @@
 #Linked Lists in Javascript
 
-- Don't work with ES6 arrow functions
+- Singly Linked Lists in Javascript with Testing
+
+Setup:
+
+```
+npm install && npm test
+```
