@@ -33,24 +33,24 @@ describe('Singly Linked List', () => {
     });
   });
 
-  describe('Remove', () => {
-    let x = new LinkedList();
-    x.push(1);
-    x.push(2);
-    x.push(3);
-    it('Should remove values from list', () => {
-      x.remove(1);
-      expect(x).to.have.lengthOf(2);
-      expect(x.head.value).to.equal(2);
-      expect(x.head.next.value).to.equal(3);
-      x.push(4);
-      x.remove(3);
-      // console.log(x.head);
-      expect(x).to.have.lengthOf(2);
-      expect(x.head.value).to.equal(2);
-      expect(x.head.next.value).to.equal(4);
-    });
-  });
+  // describe('Remove', () => {
+  //   let x = new LinkedList();
+  //   x.push(1);
+  //   x.push(2);
+  //   x.push(3);
+  //   it('Should remove values from list', () => {
+  //     x.remove(1);
+  //     expect(x).to.have.lengthOf(2);
+  //     expect(x.head.value).to.equal(2);
+  //     expect(x.head.next.value).to.equal(3);
+  //     x.push(4);
+  //     x.remove(3);
+  //     // console.log(x.head);
+  //     expect(x).to.have.lengthOf(2);
+  //     expect(x.head.value).to.equal(2);
+  //     expect(x.head.next.value).to.equal(4);
+  //   });
+  // });
 
   describe('Loop detection', () => {
     let x = new LinkedList();
