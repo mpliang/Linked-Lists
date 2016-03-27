@@ -47,6 +47,21 @@ LinkedList.prototype = {
     }
     this.length--;
     // console.log(this.head);
+  },
+
+  detectLoop: function () {
+    var slowPointer = this.head,
+      fastPointer = this.head;
+
+    while (slowPointer && fastPointer && fastPointer.next) {
+      slowPointer = slowPointer.next;
+      fastPointer = fastPointer.next.next;
+
+      if (slowPointer == fastPointer) {
+        return true;
+      }
+    }
+    return false;
   }
 
 }

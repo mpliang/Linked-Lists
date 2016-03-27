@@ -51,4 +51,23 @@ describe('Singly Linked List', () => {
       expect(x.head.next.value).to.equal(4);
     });
   });
+
+  describe('Loop detection', () => {
+    let x = new LinkedList();
+    x.push(1);
+    x.push(2);
+    x.push(3);
+    x.push(4);
+    x.push(5);
+    it('Should be false', () => {
+      expect(x.detectLoop()).to.be.false;
+
+    })
+    it('Should be true', () => {
+      x.head.next.next.next.next.next = x.head.next.next;
+      expect(x.detectLoop()).to.be.true;
+
+    })
+  })
+
 });
