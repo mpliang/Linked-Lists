@@ -6,7 +6,7 @@
 ##Tech Used
 - Javascript ES2015
 - Node
-- Mocha / Chai
+- Mocha / Chaitou
 - Babel
 
 
