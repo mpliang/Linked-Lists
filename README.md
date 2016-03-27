@@ -1,6 +1,7 @@
 #Linked Lists in Javascript
 
 - Linked Lists in Javascript with Testing
+- Singly, doubly, and circular linked lists
 
 ##Tech Used
 - Javascript ES2015
