@@ -30,6 +30,6 @@ CircularLinkedList.prototype = {
       head.previous = node;
       current.next = node;
     }
-    length++;
+    this.length++;
   }
 }
