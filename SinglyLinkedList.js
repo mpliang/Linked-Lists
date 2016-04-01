@@ -1,7 +1,7 @@
 'use strict';
 
 
-function LinkedList() {
+export function LinkedList() {
     this.length = 0;
     this.head = null;
 }
@@ -66,20 +66,3 @@ LinkedList.prototype = {
     }
 
 }
-var x = new LinkedList();
-x.push(1);
-x.push(2);
-x.push(3);
-x.push(4);
-console.log(x);
-console.log(x.head.next.next);
-// console.log(swapPairs(x.head));
-//
-// function swapPairs(head) {
-//     console.log('in swap: ', head);
-//     if (head === null || head.next === null) return head;
-//     var temp = head.next;
-//     head.next = swapPairs(head.next.next);
-//     temp.next = head;
-//     return temp;
-// }
